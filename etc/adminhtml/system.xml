@@ -7,16 +7,16 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="nortn_tab" translate="label" sortOrder="100">
-            <label>NortN PageBuilder</label>
+            <label>NortN</label>
         </tab>
         <section id="nortn_pagebuilder" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>PageBuilder</label>
             <tab>nortn_tab</tab>
             <resource>NortN_PageBuilderClassPresets::config</resource>
             <group id="class_presets" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>CSS Classes Presets</label>
+                <label>CSS Class Presets</label>
                 <field id="class_presets_list" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Classes Preset</label>
+                    <label>Class Presets</label>
                     <comment><![CDATA[Enter all sets of classes which you would like to use for CMS content. If you are using TailwindCSS, please refer to its documentation <a href="https://tailwindcss.com/docs/installation/using-vite" target="_blank">here</a>.]]></comment>
                     <frontend_model>NortN\PageBuilderClassPresets\Block\Adminhtml\Form\Field\Options</frontend_model>
                     <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
