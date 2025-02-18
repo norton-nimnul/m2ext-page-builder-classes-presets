@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2025 NortN. All rights reserved.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="advanced" sortOrder="90">
+        <field name="css_classes" formElement="select">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="string"></item>
+                    <item name="component" xsi:type="string">NortN_PageBuilderClassPresets/js/form/element/select-with-hints</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">CSS Classes Preset</label>
+                <notice translate="true">Select CSS preset for custom styling</notice>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <captionValue>Select CSS preset</captionValue>
+                        <options class="NortN\PageBuilderClassPresets\Model\Config\Source\CssClassOptions"/>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+    </fieldset>
+</form>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2025 NortN. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework/ObjectManager/etc/config.xsd">
+    <type name="NortN\PageBuilderClassPresets\Model\Config\Source\CssClassOptions">
+        <arguments>
+            <argument name="scopeConfig" xsi:type="object">Magento\Framework\App\Config\ScopeConfigInterface</argument>
+        </arguments>
+    </type>
+</config>
