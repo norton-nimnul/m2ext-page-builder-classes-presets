@@ -7,7 +7,7 @@ This module enhances the **PageBuilder** functionality by adding a configurable 
   ```
   Stores -> Configuration -> NortN -> PageBuilder
   ```
-- Introduces a **Classes Presets** group with a dynamic rows field where users can:
+- Introduces a **CSS Class Presets** group with a dynamic rows field where users can:
   - Define multiple sets of CSS classes.
   - Assign labels and descriptions to each set.
 - Replaces the default "Additional Classes" input field with a select dropdown populated with values from global configuration.
@@ -15,7 +15,7 @@ This module enhances the **PageBuilder** functionality by adding a configurable 
 ## Configuration
 To configure the module:
 1. Navigate to **Stores -> Configuration -> NortN -> PageBuilder**.
-2. Locate the **Classes Presets** group.
+2. Locate the **CSS Class Presets** group.
 3. Use the dynamic rows field to add or edit class sets with labels and descriptions.
 
 **Note:** If a class preset that is currently in use is modified or removed from the configuration, it will continue to be applied until the next content edit. Upon saving, if no new preset is selected, the value will reset.
