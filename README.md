@@ -23,7 +23,7 @@ To configure the module:
 ## Installation
 To install the module from Packagist, run the following commands:
 ```sh
-composer require nortn/module-page-builder-classes-presets
+composer require nortn/magento2-page-builder-classes-presets
 bin/magento module:enable NortN_PageBuilderClassPresets
 bin/magento setup:upgrade
 bin/magento cache:flush
