@@ -30,7 +30,7 @@ class CssClassOptions implements OptionSourceInterface
 
         $options = [];
 
-        $options[] = [
+        $placeholder = [
             'value' => '',
             'label' => __('--Select CSS Preset--'),
             'caption' => ''
@@ -51,6 +51,12 @@ class CssClassOptions implements OptionSourceInterface
                 ];
             }
         }
+
+        usort($options, function ($a, $b) {
+            return strcasecmp($a['label'], $b['label']);
+        });
+
+        array_unshift($options, $placeholder);
 
         return $options;
     }
